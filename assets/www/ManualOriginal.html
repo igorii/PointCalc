@@ -27,11 +27,24 @@
 				<h2>Point Calculator</h2>
 			</div>
 		
-			<div data-role="content">		
-				<a href="#" data-role="button" data-theme="a">Quick Reference</a>
-				<a href="CapturedEntry.html" data-role="button" data-theme="a">Capture Image</a>
-				<a href="ManualEntry.html" data-role="button" data-theme="a">Manual Entry</a>
-				<a href="#" data-role="button" data-theme="a">Calculate Allowable Points</a>
+			<div data-role="content">	
+				<div data-role="fieldcontain">
+					<label for="name">Calories:</label>
+					<input type="text" name="calories" id="calories" value="" />
+				</div>	
+				<div data-role="fieldcontain">
+					<label for="name">Fat:</label>
+					<input type="text" name="fat" id="fat" value="" />
+				</div>	
+				<div data-role="fieldcontain">
+					<label for="name">Fiber:</label>
+					<input type="text" name="fiber" id="fiber" value="" />
+				</div>	
+				<div id="result"></div>
+				<button onclick="calculateOriginal()">Calculate!</button>
+				
+				<a href="ManualEntry.html" data-role="button" data-theme="a">Back</a>
+				<a href="index.html" data-role="button" data-theme="a">Back to menu</a>
 			</div>
 		
 		</div>
